@@ -1,16 +1,16 @@
 import React from "react"
 import { makePersistable } from "mobx-persist-store"
-import { observable } from "mobx"
+import { makeAutoObservable } from "mobx"
 
 export default class RootStore {
 	constructor() {
+		makeAutoObservable(this)
 		makePersistable(this, {
 			name: "RootStore",
 			properties: ["field"],
 		})
 	}
 
-	@observable
 	field: string = "foobar"
 }
 
