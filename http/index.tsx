@@ -6,7 +6,7 @@ import { observer } from "mobx-react";
 const Index = observer(class Index extends React.Component {
 	store = new RootStore()
 
-	render() {
+	render(): JSX.Element {
 		return (
 			<context.Provider value={this.store}>
 				<span>Hello, world!</span>

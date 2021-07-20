@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Template for Rocket website with React and MobX",
   "scripts": {
+    "line": "eslint . --ext .ts,.tsx",
     "build": "parcel build --dist-dir target/http http/index.html && cargo build --release",
     "watch": "parcel watch --dist-dir target/http http/index.html",
     "start": "npm run build && ./target/release/rocket-react-mobx"
@@ -19,6 +20,12 @@
   "homepage": "https://github.com/reujab/rocket-react-mobx#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-plugin-react": "^7.24.0",
     "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {

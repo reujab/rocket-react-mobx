@@ -11,7 +11,7 @@ export default class RootStore {
 		})
 	}
 
-	field: string = "foobar"
+	field = "foobar"
 }
 
 export const context = React.createContext<RootStore>(null)
