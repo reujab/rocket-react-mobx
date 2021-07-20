@@ -1,0 +1,35 @@
+{
+  "name": "rocket-react-mobx",
+  "version": "0.0.0",
+  "description": "Template for Rocket website with React and MobX",
+  "scripts": {
+    "build": "parcel build --dist-dir target/http http/index.html && cargo build --release",
+    "watch": "parcel watch --dist-dir target/http http/index.html",
+    "start": "npm run build && ./target/release/rocket-react-mobx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reujab/rocket-react-mobx.git"
+  },
+  "author": "reujab",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/reujab/rocket-react-mobx/issues"
+  },
+  "homepage": "https://github.com/reujab/rocket-react-mobx#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "mobx": "^6.3.2",
+    "mobx-persist-store": "^1.0.3",
+    "mobx-react": "^7.2.0",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
